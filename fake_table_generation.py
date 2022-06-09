@@ -23,6 +23,13 @@ table.field_names = ['ID', 'Email Subject', 'Email Date']
 
 # one loop where each row have random date and email subject element
 # after generation added to the table 'Fake Data'
+# also, could create separete arrays of id, email_subject and email_date, and then add data to the prettytable
+# but one loop one interation created is more simpler, and, I suspect, better performance, as everything is done in one iteration. 
+# performance could be tested by changing the row count, and time() or  datetime.datetime.now() function on each step, 
+# and to see, which takes the most loading time
+# there are few libraries, which could help to check performance like timeit or cProfile, where one interation could be repeated multiple times
+# and peformance can be tested by changing variables, to generate more data, repeated multiple times. 
+
 for i in range(row_count):
     random_date = r_start_date + dt.timedelta(days = r.randrange(delta_days)) # add random number of days to 1st of January
     random_date = random_date.isoformat() # format date to isformat which is %Y-%m-%d
