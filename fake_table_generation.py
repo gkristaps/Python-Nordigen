@@ -1,7 +1,7 @@
 import random as r
 import datetime as dt
 from datetime import date as d
-from prettytable import PrettyTable
+from prettytable import PrettyTable as pt
 
 # table row count definition
 row_count = 1000
@@ -16,7 +16,7 @@ delta_days = delta_days.days # days between date range
 email_subject_group = ['Purchase','Spam','Friend']
 
 # prettify fake data table
-table = PrettyTable()
+table = pt()
 table.title = 'Fake Data'
 table.field_names = ['ID', 'Email Subject', 'Email Date']
 
