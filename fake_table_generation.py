@@ -10,7 +10,7 @@ row_count =  randint(1, 100) # can be fixed
 # date restrictions 
 r_end_date = d.today()
 r_start_date = r_end_date - dt.timedelta(days = r.randrange(randint(1,100))) # can be fixed
-delta_days = r_end_date - r_start_date
+delta_days = r_end_date - r_start_date # can be changed, and used abs() to calc difference
 delta_days = delta_days.days # days between date range
 
 # email category names
