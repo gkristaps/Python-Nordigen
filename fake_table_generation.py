@@ -22,7 +22,7 @@ table.title = 'Fake Data'
 table.field_names = ['ID', 'Email Subject', 'Email Date']
 
 for i in range(row_count):
-    random_date = r_start_date + dt.timedelta(days = r.randrange(delta_days)) # add random number of days to 1st of January
+    random_date = r_start_date + dt.timedelta(days = r.randrange(delta_days)) # add random number of days
     random_date = random_date.isoformat() # format date to isformat which is %Y-%m-%d
 # Email subject with random number in the end, number is in the range of 1 to delta_days
     random_email_subject = 'Email Subject' + ' ' + r.choice(email_subject_group) + ' ' + str(r.randrange(delta_days))
