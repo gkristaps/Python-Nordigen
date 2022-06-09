@@ -1,4 +1,4 @@
-# Nordigen_practical_task_-1
+# Nordigen_practical_task
 Python code to generate fake email data
 
 I have added the code, which generates prettyTable, but after can be exported to .csv, or any other standart data file format. 
