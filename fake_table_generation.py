@@ -17,7 +17,7 @@ r_start_date = r_end_date - dt.timedelta(days = r.randrange(randint(10,100)))
 def random_date(x,y):
     diff = abs((x - y).days)
     random = r.randrange(diff)
-    return x + dt.timedelta(days = random)
+    return x + dt.timedelta(days = random+1)
 
 # array for email subject 
 email_subject_group = ['Purchase','Spam','Friend']
