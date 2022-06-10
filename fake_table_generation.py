@@ -11,13 +11,13 @@ row_count =  randint(1, 100)
 
 # date limitations to make data more realistic
 r_end_date = d.today()
-r_start_date = r_end_date - dt.timedelta(days = r.randrange(randint(10,100)))
+r_start_date = r_end_date - dt.timedelta(days = r.randrange(randint(2,100)))
 
 # function of random date 
 def random_date(x,y):
     diff = abs((x - y).days)
     random = r.randrange(diff)
-    return x + dt.timedelta(days = random+1)
+    return x + dt.timedelta(days = random)
 
 # array for email subject 
 email_subject_group = ['Purchase','Spam','Friend']
