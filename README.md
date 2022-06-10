@@ -1,5 +1,10 @@
 # Nordigen_practical_task
 Python code to generate fake email data
 
-I have added the code, which generates prettyTable, but after can be exported to .csv, or any other standart data file format. 
-Kept things simple, as everything is done in one loop, with some random element for specific values. 
+# fake_table_generation_loop.py
+Solution which generates prettyTable row by row in a loop with randomized element
+
+# fake_table_generation_list_frame.py
+Solution which randomizes limited list of values, and than generated DataFrame from the lists
+
+
