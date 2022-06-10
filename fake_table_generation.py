@@ -17,7 +17,7 @@ r_start_date = r_end_date - dt.timedelta(days = r.randrange(randint(2,100)))
 def random_date(x,y):
     diff = abs((x - y).days)
     random = r.randrange(diff)
-    return x + dt.timedelta(days = random)
+    return y + dt.timedelta(days = random)
 
 # array for email subject 
 email_subject_group = ['Purchase','Spam','Friend']
@@ -29,7 +29,7 @@ table.field_names = ['ID', 'Email Subject', 'Email Date']
 
 # loop to generate rows
 for i in range(row_count):
-    random_dates = random_date(r_start_date,r_end_date).isoformat()
+    random_dates = random_date(r_end_date,r_start_date).isoformat()
     random_email_subject = 'Email Subject' + ' ' + r.choice(email_subject_group) + ' ' + str(r.randrange(randint(1,100)))
     table.add_row([i + 1,random_email_subject,random_dates])
 
